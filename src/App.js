@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {
-    BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
@@ -14,7 +13,7 @@ import Error from "./pages/Error";
 
 function App() {
     return (
-        <Router>
+        <>
             <Navbar/>
             <Switch>
                 <Route exact path="/" component={Home}/>
@@ -22,7 +21,7 @@ function App() {
                 <Route path="/rooms/:slug" component={SingleRoom}/>
                 <Route component={Error}/>
             </Switch>
-        </Router>
+        </>
     );
 }
 
