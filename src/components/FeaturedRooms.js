@@ -10,7 +10,7 @@ class FeaturedRooms extends Component {
     static contextType = RoomContext;
 
     render() {
-        let {featuredRooms, loading} = this.context;
+        const {featuredRooms, loading} = this.context;
 
         const rooms = featuredRooms.map(room => {
             return <Room key={room.id} room={room}/>

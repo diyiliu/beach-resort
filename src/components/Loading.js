@@ -9,3 +9,7 @@ export default function Loading({title}) {
         </div>
     );
 }
+
+Loading.defaultProps = {
+    title: "loading... "
+}
